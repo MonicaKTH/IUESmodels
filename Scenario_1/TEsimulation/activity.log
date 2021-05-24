@@ -1,0 +1,35 @@
+2021-05-24 09:11:29,564 :: DEBUG :: ZEROBNL -> deploy.py :: run :: CREATE NODES
+2021-05-24 09:11:29,583 :: DEBUG :: ZEROBNL -> deploy.py :: run :: CREATE ORCH
+2021-05-24 09:11:31,829 :: DEBUG :: ZEROBNL -> deploy.py :: run :: LAUNCH NETWORK+REDIS
+2021-05-24 09:11:31,837 :: DEBUG :: ZEROBNL -> deploy.py :: run :: DUMP YAML
+2021-05-24 09:11:31,839 :: WARNING :: ZEROBNL -> deploy.py :: run :: Local node to run in [TMP_FOLDER\ctrlb1] > python wrapper.py
+2021-05-24 09:11:31,845 :: WARNING :: ZEROBNL -> deploy.py :: run :: Local node to run in [TMP_FOLDER\roomb1] > python wrapper.py
+2021-05-24 09:11:31,846 :: WARNING :: ZEROBNL -> deploy.py :: run :: Local node to run in [TMP_FOLDER\hsubb1] > python wrapper.py
+2021-05-24 09:11:31,848 :: WARNING :: ZEROBNL -> deploy.py :: run :: Local node to run in [TMP_FOLDER\hpb1] > python wrapper.py
+2021-05-24 09:11:31,850 :: WARNING :: ZEROBNL -> deploy.py :: run :: Local node to run in [TMP_FOLDER\tesb1] > python wrapper.py
+2021-05-24 09:11:31,851 :: WARNING :: ZEROBNL -> deploy.py :: run :: Local node to run in [TMP_FOLDER\ebb1] > python wrapper.py
+2021-05-24 09:11:31,852 :: WARNING :: ZEROBNL -> deploy.py :: run :: Local node to run in [TMP_FOLDER\esubb1] > python wrapper.py
+2021-05-24 09:11:31,854 :: WARNING :: ZEROBNL -> deploy.py :: run :: Local node to run in [TMP_FOLDER\eab1] > python wrapper.py
+2021-05-24 09:11:31,855 :: WARNING :: ZEROBNL -> deploy.py :: run :: Local node to run in [TMP_FOLDER\ctrlb2] > python wrapper.py
+2021-05-24 09:11:31,856 :: WARNING :: ZEROBNL -> deploy.py :: run :: Local node to run in [TMP_FOLDER\roomb2] > python wrapper.py
+2021-05-24 09:11:31,858 :: WARNING :: ZEROBNL -> deploy.py :: run :: Local node to run in [TMP_FOLDER\hsubb2] > python wrapper.py
+2021-05-24 09:11:31,859 :: WARNING :: ZEROBNL -> deploy.py :: run :: Local node to run in [TMP_FOLDER\hpb2] > python wrapper.py
+2021-05-24 09:11:31,861 :: WARNING :: ZEROBNL -> deploy.py :: run :: Local node to run in [TMP_FOLDER\tesb2] > python wrapper.py
+2021-05-24 09:11:31,863 :: WARNING :: ZEROBNL -> deploy.py :: run :: Local node to run in [TMP_FOLDER\ebb2] > python wrapper.py
+2021-05-24 09:11:31,865 :: WARNING :: ZEROBNL -> deploy.py :: run :: Local node to run in [TMP_FOLDER\esubb2] > python wrapper.py
+2021-05-24 09:11:31,866 :: WARNING :: ZEROBNL -> deploy.py :: run :: Local node to run in [TMP_FOLDER\eab2] > python wrapper.py
+2021-05-24 09:11:31,868 :: WARNING :: ZEROBNL -> deploy.py :: run :: Local node to run in [TMP_FOLDER\dhnet] > python wrapper.py
+2021-05-24 09:11:31,869 :: WARNING :: ZEROBNL -> deploy.py :: run :: Local node to run in [TMP_FOLDER\grid] > python wrapper.py
+2021-05-24 09:11:31,870 :: INFO :: ZEROBNL -> deploy.py :: run :: Waiting for local nodes to run...
+2021-05-24 09:13:00,715 :: INFO :: ZEROBNL -> deploy.py :: run :: Simulation finished in 1 min and 29 sec
+2021-05-24 09:13:00,717 :: DEBUG :: ZEROBNL -> deploy.py :: run :: FINISHED PROCESS
+2021-05-24 09:13:01,847 :: INFO :: ZEROBNL -> results.py :: get_results_by_pattern :: Matching results: RoomB1 - QthTOT
+2021-05-24 09:13:01,849 :: INFO :: ZEROBNL -> results.py :: get_results_by_pattern :: Matching results: RoomB1 - Tindoor
+2021-05-24 09:13:01,851 :: INFO :: ZEROBNL -> results.py :: get_results_by_pattern :: Matching results: RoomB1 - wea.y[1]
+2021-05-24 09:13:03,042 :: INFO :: ZEROBNL -> results.py :: get_results_by_pattern :: Matching results: HsubB1 - HSUB_Qdem_B
+2021-05-24 09:13:41,248 :: INFO :: ZEROBNL -> results.py :: get_results_by_pattern :: Matching results: CtrlB1 - CTRL_signal_EB
+2021-05-24 09:13:41,251 :: INFO :: ZEROBNL -> results.py :: get_results_by_pattern :: Matching results: CtrlB1 - CTRL_Tr_hp
+2021-05-24 09:13:41,252 :: INFO :: ZEROBNL -> results.py :: get_results_by_pattern :: Matching results: CtrlB1 - CTRL_Qth_spilled
+2021-05-24 09:13:41,255 :: INFO :: ZEROBNL -> results.py :: get_results_by_pattern :: Matching results: CtrlB1 - CTRL_signal_DH
+2021-05-24 09:13:41,258 :: INFO :: ZEROBNL -> results.py :: get_results_by_pattern :: Matching results: CtrlB1 - CTRL_Tts
+2021-05-24 09:13:41,259 :: INFO :: ZEROBNL -> results.py :: get_results_by_pattern :: Matching results: CtrlB1 - CTRL_mdot_tes

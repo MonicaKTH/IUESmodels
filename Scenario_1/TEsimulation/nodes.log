@@ -1,0 +1,31 @@
+Step 1/9 : FROM python:3
+ ---> 60e318e4984a
+Step 2/9 : RUN pip install --upgrade pip
+ ---> Using cache
+ ---> aa07d22df80f
+Step 3/9 : ARG BRANCH=master
+ ---> Using cache
+ ---> 7022b14ddb97
+Step 4/9 : RUN git clone --single-branch -b $BRANCH https://github.com/IntegrCiTy/zerobnl.git
+ ---> Using cache
+ ---> fa5c5b6dff64
+Step 5/9 : RUN cd zerobnl && pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 1302a64e4e6d
+Step 6/9 : RUN cd zerobnl && python setup.py install
+ ---> Using cache
+ ---> 10acd88aec55
+Step 7/9 : WORKDIR /code
+ ---> Using cache
+ ---> f2ec3703f47b
+Step 8/9 : ENV PYTHONDONTWRITEBYTECODE=1
+ ---> Using cache
+ ---> b4e1736966ba
+Step 9/9 : ENTRYPOINT ["python"]
+ ---> Using cache
+ ---> 261a017f4112
+Successfully built 261a017f4112
+Successfully tagged tmp_folder_orch:latest
+Attaching to orch
+orch exited with code 0
+Aborting on container exit...

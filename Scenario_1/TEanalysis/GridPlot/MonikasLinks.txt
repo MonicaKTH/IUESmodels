@@ -1,0 +1,14 @@
+This two tutorials have two ways of doing the color maps:
+
+This is a ”static” map:
+https://github.com/e2nIEE/pandapower/blob/master/tutorials/plotting_colormaps.ipynb 
+cmap_list=[(0.975, "blue"), (1.0, "green"), (1.03, "red")]
+cmap, norm = plot.cmap_continous(cmap_list)
+bc = plot.create_bus_collection(net, net.bus.index, size=80, zorder=2, cmap=cmap, norm=norm)
+plot.draw_collections([lc, bc], figsize=(8,6))
+
+
+This is an interactive map with plotly:
+https://nbviewer.jupyter.org/github/e2nIEE/pandapower/blob/develop/tutorials/plotly_built-in.ipynb 
+from pandapower.plotting.plotly import pf_res_plotly
+pf_res_plotly(net)

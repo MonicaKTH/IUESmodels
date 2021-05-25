@@ -1,16 +1,10 @@
-Some Feature A
-==============
+How to set up the models
+========================
 
-Subsection
-----------
+Tools to be installed
+---------------------
 
-Exciting documentation in here.
-Let's make a list (empty surrounding lines required):
-
-- item 1
-
-  - nested item 1
-  - nested item 2
-
-- item 2
-- item 3
+- Python 3: https://www.python.org/ 
+- Jupyter notebook: https://jupyter.org/ 
+- ZerOBNL (develop): https://github.com/IntegrCiTy/zerobnl/tree/develop 
+- Docker: https://www.docker.com/products/docker-desktop 

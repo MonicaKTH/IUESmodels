@@ -1,3 +1,5 @@
+.. _How-to-set-up-the-models:
+
 How to set up the models
 ========================
 

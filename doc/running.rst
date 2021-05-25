@@ -1,3 +1,5 @@
+.. _How-to-run-the-models:
+
 How to run the models
 =====================
 

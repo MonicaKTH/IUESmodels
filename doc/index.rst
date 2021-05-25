@@ -10,6 +10,8 @@ Welcome to IUES models's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   feature-a.rst
-   feature-b.rst
+   introduction.rst
+   setup.rst
+   running.rst
+   bibliography.rst
 

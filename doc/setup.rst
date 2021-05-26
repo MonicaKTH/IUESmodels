@@ -10,3 +10,8 @@ Tools to be installed
 - Jupyter notebook: https://jupyter.org/ 
 - ZerOBNL (develop): https://github.com/IntegrCiTy/zerobnl/tree/develop 
 - Docker: https://www.docker.com/products/docker-desktop 
+
+.. _The_co-simulation_platform:
+
+The co-simulation platform
+---------------------------

@@ -3,6 +3,8 @@
 How to set up the models
 ========================
 
+Clone...CONTINUE HERE
+
 Tools to be installed
 ---------------------
 

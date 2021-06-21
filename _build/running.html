@@ -1,0 +1,314 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>How to run the models &mdash; IUES models 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Bibliography" href="bibliography.html" />
+    <link rel="prev" title="How to set up the models" href="setup.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> IUES models
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">How to set up the models</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How to run the models</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tesimulation-folder">TEsimulation folder</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-use-runscenario">How to use runScenario</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#notes-on-the-addfiles-folder">Notes on the AddFiles folder</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#teanalysis-folder">TEanalysis folder</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bibliography.html">Bibliography</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">IUES models</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>How to run the models</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/running.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="how-to-run-the-models">
+<span id="id1"></span><h1>How to run the models<a class="headerlink" href="#how-to-run-the-models" title="Permalink to this headline">¶</a></h1>
+<p>A scenario folder contains three folders:</p>
+<ul class="simple">
+<li><p>InputData</p></li>
+<li><p>TEanalysis</p></li>
+<li><p>TEsimulation</p></li>
+</ul>
+<p>The InputData folder contains various files with raw data.
+These data are cleaned and structured to be ready to be given
+as inputs to the model. The TEanalysis folder contains the Python
+functions that can be used for the post process of the results that
+are obtained as outputs from the model. The TEsimulation folder
+contains the main model.</p>
+<div class="section" id="tesimulation-folder">
+<h2>TEsimulation folder<a class="headerlink" href="#tesimulation-folder" title="Permalink to this headline">¶</a></h2>
+<p>This folder contains the following main items:</p>
+<ul class="simple">
+<li><p>the AddFiles folder contains the inputs files to the model;</p></li>
+<li><p>the Results folders contains the output results from the model in the form of files and figures;</p></li>
+<li><p>runScenario.ipynb is the file that should be open with the Jupyter notebook interface. The overall model is launched by running this file;</p></li>
+<li><p>the python files represent the different models that are part of the overall energy infrastructures (e.g. controllers, district heating supply plants and heat consumers)</p></li>
+<li><p>the log files can be used for debugging the overall code when receiving an error from the overall simulation;</p></li>
+<li><p>the remaining file (fmu and docker) are specific to the co-simulation approach of this model. Further information could be provided for advanced users of the model.</p></li>
+</ul>
+<p>An advanced user, who wish to change the co-simulation structure (add/remove/modify models), should get a more in depth explanation of each of the above files. For the sake of running the models set up as it is, a user should focus on how to use the runScenario file.</p>
+<div class="section" id="how-to-use-runscenario">
+<h3>How to use runScenario<a class="headerlink" href="#how-to-use-runscenario" title="Permalink to this headline">¶</a></h3>
+<p>The script in this file is composed of the different steps that should be followed to set up a co-simulation:</p>
+<ul class="simple">
+<li><p>define the meta-models;</p></li>
+<li><p>defined the nodes, which are the instances of the models, based on common meta-models;</p></li>
+<li><p>define the links among the nodes;</p></li>
+<li><p>establish a simulation hierarchy within each co-simulation step;</p></li>
+<li><p>set the length and the time step of the co-simulation;</p></li>
+<li><p>run the co-simulation.</p></li>
+</ul>
+<p>An advanced user, who wish to change the co-simulation structure (add/remove/modify models), should get a more in depth explanation of each of the above functions. For the sake of running the models set up as it is, a user should focus on the following functions:</p>
+<ul class="simple">
+<li><p>set the name for the input supply and return temperature curves (the labels can be read here (*));</p></li>
+<li><p>set a maximum value for the network mass flow rate in order to check the technical feasibility of the above inputs;</p></li>
+<li><p>set the co-simulation length (from one hour up to 365 days).</p></li>
+</ul>
+<p>After running the Jupyter Notebook scripts, a message will appear with a statement that refers to the simulation waiting for the local nodes. At this point, the user should run with a python command the file runLocals.py. Two subsequent questions will appear. The answer is 1 to both of them (the reference model for the buildings). This last step will launch for the co-simulation, which will take around one hour for a one year simulation.</p>
+<p>A co-simulation run in Jupyter Notebook produces results that are:</p>
+<ul class="simple">
+<li><p>displayed directly in the notebook;</p></li>
+<li><p>saved as files;</p></li>
+<li><p>saved as figures, when reproduced as plots.</p></li>
+</ul>
+<p>The last two points of results are stored in the Results folder, in the TEsimulation folder. In this same folder, after each co-simulation, two debug files are updated: activity.log and nodes.log. These files can be read as text files to help debugging potential errors</p>
+</div>
+<div class="section" id="notes-on-the-addfiles-folder">
+<h3>Notes on the AddFiles folder<a class="headerlink" href="#notes-on-the-addfiles-folder" title="Permalink to this headline">¶</a></h3>
+<p>This folder contains the input data to the co-simulation set up. The following files can be either directly modified or can be replaced by working with the raw files in the folder InputData:</p>
+<ul class="simple">
+<li><p>BBs_atemp contains the heated flow area of each building in the case study:</p></li>
+<li><p>BlocksData is a sum up of different input files for each building in the case study. The heated floor area values are stored here as well;</p></li>
+<li><p>DHlosses contains the hourly curve for the reference network heat losses;</p></li>
+<li><p>DHsupplyAvailability contains the time availability profiles for the different plants included in the heat supply mix;</p></li>
+<li><p>(*) TR and TS contains the hourly profiles for the return and supply temperatures.</p></li>
+</ul>
+<p>The following files require further advanced explanation to be changed:</p>
+<ul class="simple">
+<li><p>Dhw.txt is the profile for the domestic hot water utilisation in the buildings;</p></li>
+<li><p>InternalGains1.txt is the profile for the internal heat gains in the buildings;</p></li>
+<li><p>Weather_Stockholm2022 is the profile for the outdoor temperature.</p></li>
+</ul>
+<p>These files are linked to the FMU (Functional Mock-up Interface) for the Modelica model of the buildings. If a change should be made, the FMU should be updated as well, which require a more advanced explanation.</p>
+</div>
+</div>
+<div class="section" id="teanalysis-folder">
+<h2>TEanalysis folder<a class="headerlink" href="#teanalysis-folder" title="Permalink to this headline">¶</a></h2>
+<p>This folder contains the following main items:</p>
+<ul class="simple">
+<li><p>a Results folder to store the results produced by the below files;</p></li>
+<li><p>a file responsible for processing the results stored in the Results folder located in TEsimulation;</p></li>
+<li><p>a file for running the technical analysis;</p></li>
+<li><p>a file for running the economic analysis;</p></li>
+<li><p>a file for running the environmental analysis;</p></li>
+<li><p>a file for creating the plots for:</p>
+<ul>
+<li><p>cumulative and hourly heat load curves</p></li>
+<li><p>hourly mass flow rate</p></li>
+<li><p>hourly outdoor temperature</p></li>
+<li><p>hourly supply and return temperatures</p></li>
+</ul>
+</li>
+</ul>
+<p>A user who wish to run a complete analysis should launch with a python command:</p>
+<ul class="simple">
+<li><p>run_Environmental.py (which activate the other levels of analysis as well)</p></li>
+<li><p>runPlots.py</p></li>
+</ul>
+<p>All the results are stored in the Results folder.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="bibliography.html" class="btn btn-neutral float-right" title="Bibliography" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="setup.html" class="btn btn-neutral float-left" title="How to set up the models" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Monica Arnaudo.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
